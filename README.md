@@ -1,5 +1,8 @@
 # AWS集成Authing认证服务的演示
 
+*** 请参考这个更优化的实现： https://github.com/linjungz/aws-authing-demo ***
+
+
 这是一个简单的示例，演示如何在AWS国内区域集成Authing.cn的认证服务，用来做为AWS Cognito User Pool的替代方案。
 
 ## 基本介绍
@@ -18,7 +21,7 @@ http://aws-oidc-authing-demo-codeflow.s3-website.cn-northwest-1.amazonaws.com.cn
 
 <img src="imgs/diagram1.png" width=800 align=center>
 
-注：使用Authorization Code Flow以便支持非https网站，对于https网站可以使用Implicit Flow以简化获取id token的流程，相关实现会在后续进行补充
+注：使用Authorization Code Flow以便支持非https网站，对于https网站可以使用Implicit Flow以简化获取id token的流程，具体请参考这个项目： https://github.com/linjungz/aws-authing-demo
 
 ### 通过id token对API Gateway进行访问
 
